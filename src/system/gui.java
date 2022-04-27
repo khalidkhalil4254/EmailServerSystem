@@ -1,5 +1,6 @@
 package system;
 import javax.swing.*;
+import java.awt.*;
 
 public class gui {
 
@@ -8,12 +9,14 @@ public class gui {
     JTextArea clientReq_txt, serverRes_txt;
     JButton createConnection, closeEverything ,exit;
     JScrollPane scroll1 ,scroll2;
+    Image serverIcon;
 
     gui(){
-
+        //defining icons:-
+        serverIcon = Toolkit.getDefaultToolkit().getImage("email (1).png");
         //creating the frame:-
         app=new JFrame("Server-Administration");
-
+        app.setIconImage(serverIcon);
 
         //creating the components:-
         server_status=new JLabel("status:-");
