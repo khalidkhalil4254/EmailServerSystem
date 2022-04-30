@@ -28,9 +28,11 @@ public class gui {
 
 
         clientReq_lbl=new JLabel("clients_requests:-");
-        clientReq_lbl.setBounds(50,20,120,20);
+        clientReq_lbl.setFont(new Font("Verdana", Font.BOLD, 15));
+        clientReq_lbl.setBounds(50,20,180,20);
 
         clientReq_txt=new JTextArea();
+        clientReq_txt.setFont(new Font("Verdana", Font.PLAIN, 15));
         clientReq_txt.setToolTipText("Client-Requests");
         clientReq_txt.setEditable(false);
         scroll1 = new JScrollPane (clientReq_txt, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
@@ -38,10 +40,12 @@ public class gui {
 
 
         clientRes_lbl=new JLabel("server_responses:-");
-        clientRes_lbl.setBounds(450,20,120,20);
+        clientRes_lbl.setFont(new Font("Verdana", Font.BOLD, 16));
+        clientRes_lbl.setBounds(450,20,180,20);
 
 
         serverRes_txt=new JTextArea();
+        serverRes_txt.setFont(new Font("Verdana", Font.PLAIN, 16));
         serverRes_txt.setToolTipText("Server-Responses");
         serverRes_txt.setEditable(false);
         scroll2 = new JScrollPane (serverRes_txt, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
